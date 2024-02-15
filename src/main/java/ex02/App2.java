@@ -13,7 +13,7 @@ public class App2 {
 
         List<DBData2> dbList = Arrays.asList(dbData1, dbData2, dbData3);
 
-        // 2. ddbList(컬렉션을) ViewData(오브젝트)에 옮기시오 - ORM
+        // 2. dbList(컬렉션을) ViewData2(오브젝트)에 옮기시오 - ORM
         
     }
 }
