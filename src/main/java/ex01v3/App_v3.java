@@ -1,8 +1,5 @@
 package ex01v3;
 
-import ex01.DBData1;
-import ex01v3.model.User_v3;
-
 public class App_v3 {
     public static void main(String[] args) {
         // 1. DB에서 가져온 데이터 - Flat(평평) 하게 가져올 수 밖에 없다
