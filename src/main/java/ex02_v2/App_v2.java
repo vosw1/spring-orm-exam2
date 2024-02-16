@@ -15,17 +15,18 @@ public class App_v2 {
         List<DBData_v2> dbList = Arrays.asList(dbData1, dbData2, dbData3);
         // 생성자에 디비리스트 넣고
         // 2. dbList(컬렉션을) ViewData2(오브젝트)에 옮기시오 - ORM
-        if (dbList.size() == 0) return;
+        if (dbList.size() == 0) return; // 값이 null일때 처리하기
 
-        ViewData_v2 viewData2 = new ViewData_v2(
+        ViewData_v2 viewData_v2 = new ViewData_v2(
+                //리스트에 추가하기
                 dbList.get(0).getBoardId(),
                 dbList.get(0).getTitle(),
-                dbList.get(0).getTitle()
+                dbList.get(0).getContent()
         );
 
-        for (DBData_v2 data : dbList) {
+        for (DBData_v2 data : dbList) { //댓글 갯수만큼 반복문 돌리기
             Reply_v2 r = new Reply_v2(data.getReplyId(), data.getComment());
-            viewData2.addReply(r);
+            viewData_v2.addReply(r);
         }
     }
 }

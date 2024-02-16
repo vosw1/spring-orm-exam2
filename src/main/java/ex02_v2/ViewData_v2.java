@@ -24,7 +24,7 @@ public class ViewData_v2 {
     // 댓글들은 addReply로 추가하기
     private List<Reply_v2> replies = new ArrayList<>();
 
-    public void addReply(Reply_v2 replyV2){
-        replies.add(replyV2);
+    public void addReply(Reply_v2 reply_v2){
+        replies.add(reply_v2);
     }
 }
